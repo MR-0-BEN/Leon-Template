@@ -1,6 +1,9 @@
 /* start varibles */
 
 /* End varibles */
+:root {
+    --main-color : #10cab7;
+}
 /* start Global rules */
 * {
     -webkit-box-sizing: border-box;
@@ -102,6 +105,7 @@ body {
 }
 .header .links:hover ul {
     display: block;
+    z-index: 1;
 }
 .header .links ul li:not(:last-child) {
     border-bottom: solid 1px #ddd;
@@ -116,13 +120,47 @@ body {
     padding-left: 25px;
     transition: 0.4s;
 }
-
-
-
-
-
-
-
-
-
 /* end header */
+/* start landing section */
+.landing {
+    background-image: url("../images/landing.webp");
+    background-size: cover;
+    min-height: calc(100vh - 65px);
+    position: relative;
+}
+.landing .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 380px;
+    max-width: 100%;
+    transform: translate(-50% , -50%);
+}
+.landing .intro-text h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--main-color);
+
+}
+.landing .intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+
+}
+
+@media (max-width: 767px) {
+    .landing .intro-text {
+
+    }
+}
+
+/* end landing section */
+
+
+
+
+
+
+
