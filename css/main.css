@@ -4,6 +4,32 @@
 }
 /* End varibles */
 
+/* start components */
+
+.special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    text-align: center;
+    margin: 0;
+}
+.special-heading + p {
+    margin: -35px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+@media (max-width: 767px) {
+    .special-heading {
+        font-size: 75px;
+    }
+    .special-heading + P {
+        margin: -25px 0 0;
+    }
+}
+/* end components */
+
 /* start Global rules */
 * {
     -webkit-box-sizing: border-box;
@@ -153,7 +179,6 @@ body {
 /* end landing section */
 
 /* star feature */
-
 .feature {
     padding-top:60px;
     padding-bottom: 60px;
@@ -167,7 +192,7 @@ body {
 .feature  .feat {
     padding: 20px;
     text-align: center;
-}
+ }
 .feature .feat i {
     color: var(--main-color);
 }
@@ -178,12 +203,17 @@ body {
 .feature .feat p {
     line-height: 1.8;
     color: #777;
-    font-size: 17px;
+    font-size: 17px;   
+}
+/* end feature */
 
+/* start services */
+.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-
-/* end feature */
+/* end services */
 
 
 
