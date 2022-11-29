@@ -1,6 +1,7 @@
 /* start varibles */
 :root {
-    --main-color : #10cab7;
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
 }
 /* End varibles */
 
@@ -211,6 +212,66 @@ body {
 .services {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px ,1fr));
+    grid-gap: 30px;
+    margin-top: 150px;
+}
+.services .services-content .srv {
+    display: flex;
+    margin-bottom: 50px;
+}
+.services .services-content .srv i {
+    color: var(--main-color);
+    flex-basis: 60px;
+}
+.services .services-content .srv .text {
+    flex: 1;
+    
+}
+.services .services-content .srv .text h3 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.services .services-content .srv .text p {
+    
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 19px
+}
+.services .services-content .image {
+    position: relative;
+    text-align: center;
+}
+.services .services-content .image::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: calc(100% + 100px);
+    top: -50px;
+    right: 0;
+    background-color: var(--secondary-color);
+    z-index: -1;
+    
+}
+.services .services-content .image img {
+    width: 260px;
+     height: 346.667px;
+}
+@media (max-width: 767px) {
+    .services .services-content .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 1199px) {
+    .services .services-content .image {
+        display: none;
+    }
 }
 
 /* end services */
