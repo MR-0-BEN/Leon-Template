@@ -170,19 +170,19 @@ body {
     width: 430px;
     max-width: 100%; 
 }
-.landing .intro-text {
-     /* position: absolute; */
-    /*left: 50%;
-    top: 50%; */
-    /* text-align: center; */
-    /* width: 380px; */
-    /* max-width: 100%;  */
-    /* transform: translate(-50% , -50%); */
-    /* display: flex;
+ /* .landing .intro-text {
+     position: absolute; 
+    left: 50%;
+    top: 50%; 
+    text-align: center; 
+    width: 380px; 
+     max-width: 100%; 
+    transform: translate(-50% , -50%); 
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; */
-}
+    flex-direction: column;
+}  */
 .landing .intro-text h1 {
     margin: 0;
     font-weight: bold;
@@ -278,7 +278,7 @@ body {
 }
 .services .services-content .image img {
     width: 260px;
-     height: 346.667px;
+    height: 346.667px;
 }
 @media (max-width: 767px) {
     .services .services-content .srv {
@@ -300,12 +300,11 @@ body {
     padding-bottom: var(--section-padding);
 }
 .portfolio .portfolio-content .container {
-    padding: 0 15px;
+    padding: 0 ;
 }
 .portfolio .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    grid-gap: 30px;
     margin-top: 80px;
 }
 .portfolio .portfolio-content .image img{
@@ -322,13 +321,55 @@ body {
 .portfolio .portfolio-content .info h3 {
     margin: 0;
 }
-.portfolio .card .portfolio-content .info p {
+.portfolio .portfolio-content .info p {
     color: #777;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 0;
 }
-
 /* end portfolio */
+
+/* start about  */
+.about {
+    padding-top: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 60px);
+}
+.about .about-content {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .about-content .image {
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+.about .about-content .image::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: calc(100% + 100px);
+    top: -50px;
+    left: -20px;
+    background-color: #ebeced;
+    z-index: -1;
+}
+.about .about-content .image::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 250px;
+    border-left: solid 80px #10cab7;
+    border-bottom: solid 80px #10cab7;
+    z-index: -1;
+    top: -49px;
+    right: -150px;
+
+}
+.about .about-content .image img  {
+    max-width: 100%;
+}
+/* end about  */
 
 
 
